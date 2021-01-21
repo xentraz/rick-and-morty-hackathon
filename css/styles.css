@@ -1,0 +1,29 @@
+body {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  height: 80px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.card .images {
+  height: 50px;
+  width: 50px;
+}

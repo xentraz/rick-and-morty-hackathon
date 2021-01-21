@@ -1,4 +1,4 @@
-[
+var rickandMortyList = [
 	{
 		id: 1,
 		name: 'Rick Sanchez',
