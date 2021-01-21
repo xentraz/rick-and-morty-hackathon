@@ -745,17 +745,17 @@ var rickandMortyList = [
 
 for (var i = 0; i < rickandMortyList.length; i++) {
     document.querySelector('main').innerHTML +=
-    '<div class="card '+ '"><p>'+ 
+    '<div class="card '+ '"><p class="id">'+ 
     rickandMortyList[i].id +
-    '</p><h2>' +
+    '</p><h2 class="name">' +
     rickandMortyList[i].name +
-    '</h2><p>' +
+    '</h2><p class="status">' +
     rickandMortyList[i].status +
-    '</p><p>' +
+    '</p><p class="gender">' +
     rickandMortyList[i].gender +
     '</p><img class="images"src=\"' +
     rickandMortyList[i].image +'\">'
-    '<p>' +
+    '<p class="type">' +
     rickandMortyList[i].type +
     '</p></div>';
 }
