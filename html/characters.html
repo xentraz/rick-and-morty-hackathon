@@ -4,10 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styles.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
- />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
   integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
@@ -18,16 +14,15 @@
     <img src="/img/netflix-logo.png" alt="Netflix logo">
     <ul>
       <li><a href="/index.html">Home</a></li>
-      <li><a href="#">Episodes</a></li>
       <li><a href="/html/characters.html">Characters</a></li>
-      <li><a href="#">Information</a></li>
+      <li><a href="/html/episodes.html">Episodes</a></li>
     </ul>
   </div>
   <header>
     <img src="/img/logo.png" alt="Rick and Morty Logo">
     <!-- https://www.stickpng.com/cat/cartoons/rick-and-morty?page=1 -->
   </header>
-  <main class="character-main">
+  <main>
     <h1>Explore The Characters found in Rick & Morty</h1>
     <!-- https://www.w3schools.com/howto/howto_js_filter_elements.asp -->
     <div class="filter-buttons">
@@ -36,10 +31,12 @@
       <button class="btn" onclick="filterSelection('dead')"><span><i class="far fa-dizzy"></i></span> Dead</button>
       <button class="btn" onclick="filterSelection('unknown')"><span><i class="far fa-question-circle"></i> </span>Unknown</button>
     </div>
-    <section class="status-all filter"></section>
-    <section class="status-alive filter"></section>
-    <section class="status-dead filter"></section>
-    <section class="status-unknown filter"></section>
+    <div class="sorted">
+      <section class="status-all filter"></section>
+      <section class="status-alive filter"></section>
+      <section class="status-dead filter"></section>
+      <section class="status-unknown filter"></section>
+    </div>
   </main>
   <script src="/js/characters.js"></script>
 </body>
