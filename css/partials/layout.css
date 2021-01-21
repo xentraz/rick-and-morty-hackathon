@@ -15,7 +15,17 @@ body {
   background: linear-gradient(
     0deg,
     rgba(24, 24, 24, 1) 0%,
-    rgba(24, 24, 24, 1) 90%,
+    rgba(24, 24, 24, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.characters {
+  background: rgb(24, 24, 24);
+  background: linear-gradient(
+    0deg,
+    rgba(24, 24, 24, 1) 0%,
+    rgba(24, 24, 24, 1) 95%,
     rgba(0, 0, 0, 1) 100%
   );
 }
@@ -23,6 +33,13 @@ body {
 .nav {
   grid-area: 'navigation';
   color: white;
+}
+
+.nav img {
+  float: left;
+  position: relative;
+  height: 70px;
+  width: 150px;
 }
 
 .nav ul {
