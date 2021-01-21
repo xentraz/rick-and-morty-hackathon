@@ -744,8 +744,8 @@ var rickAndMortyList = [
 ];
 
 for (var i = 0; i < rickAndMortyList.length; i++) {
-      document.querySelector('.status-alive').innerHTML +=
-    '<div class="alive '+ '"><p class="id">'+ 
+      document.querySelector('.status-all').innerHTML +=
+    '<div class="all '+ '"><p class="id">'+ 
     '<span class="span">Character ID: </span>' + rickAndMortyList[i].id +
     '</p><h2 class="name">' +
     '<span class="span">Name: </span>'+ rickAndMortyList[i].name +
@@ -857,7 +857,6 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 // Search Bar 
-
 
 
 
