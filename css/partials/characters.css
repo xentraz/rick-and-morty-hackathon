@@ -102,6 +102,14 @@ h3 {
   border-bottom: 1px solid white;
 }
 
+.dead > .status {
+  color: #751b1b;
+}
+
+.unknown .status {
+  color: #155c1b;
+}
+
 .dead:hover {
   border-radius: 6px;
   background-color: #333333;

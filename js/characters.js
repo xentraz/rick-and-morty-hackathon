@@ -764,28 +764,8 @@ for (var i = 0; i < rickAndMortyList.length; i++) {
     rickAndMortyList[i].type +
     '</p></div>';
 	}
-    if (rickAndMortyList[i].status === 'unknown') {
-      document.querySelector('.status-dead').innerHTML +=
-      '<div class="unknown '+ '"><p class="id">'+ 
-      '<span class="span">Character ID: </span>' + rickAndMortyList[i].id +
-      '</p><h2 class="name">' +
-      '<span class="span">Name: </span>'+ rickAndMortyList[i].name +
-      '</h2><p class="status">' +
-      '<span class="span">Status: </span>'+ rickAndMortyList[i].status +
-      '</p><p class="gender">' +
-      '<span class="span">Gender: </span>'+ rickAndMortyList[i].gender +
-      '</p><p class="location">' +
-      '<span class="span">Location: </span>'+ rickAndMortyList[i].location.name +
-      '</p><p class="url">' +
-      '<span class="span">Url: </span>'+ rickAndMortyList[i].location.url +
-      '</p><img class="images"src=\"' +
-      rickAndMortyList[i].image +'\">'
-      '<p class="type">' +
-      rickAndMortyList[i].type +
-      '</p></div>';
-    }
     if (rickAndMortyList[i].status === 'Dead') {
-      document.querySelector('.status-unknown').innerHTML +=
+      document.querySelector('.status-dead').innerHTML +=
       '<div class="dead '+ '"><p class="id">'+ 
       '<span class="span">Character ID: </span>' + rickAndMortyList[i].id +
       '</p><h2 class="name">' +
@@ -804,6 +784,26 @@ for (var i = 0; i < rickAndMortyList.length; i++) {
       rickAndMortyList[i].type +
       '</p></div>';
     }
+    if (rickAndMortyList[i].status === 'unknown') {
+      document.querySelector('.status-unknown').innerHTML +=
+      '<div class="unknown '+ '"><p class="id">'+ 
+      '<span class="span">Character ID: </span>' + rickAndMortyList[i].id +
+      '</p><h2 class="name">' +
+      '<span class="span">Name: </span>'+ rickAndMortyList[i].name +
+      '</h2><p class="status">' +
+      '<span class="span">Status: </span>'+ rickAndMortyList[i].status +
+      '</p><p class="gender">' +
+      '<span class="span">Gender: </span>'+ rickAndMortyList[i].gender +
+      '</p><p class="location">' +
+      '<span class="span">Location: </span>'+ rickAndMortyList[i].location.name +
+      '</p><p class="url">' +
+      '<span class="span">Url: </span>'+ rickAndMortyList[i].location.url +
+      '</p><img class="images"src=\"' +
+      rickAndMortyList[i].image +'\">'
+      '<p class="type">' +
+      rickAndMortyList[i].type +
+      '</p></div>';
+		}
 }
 
 // Buttons functions below: https://www.w3schools.com/howto/howto_js_filter_elements.asp //
