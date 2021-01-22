@@ -748,13 +748,14 @@ var i, episode;
 for (i = 0; i < rickAndMortyList.length; i++) {
   for (item in rickAndMortyList[i]) {
     document.querySelector('main').innerHTML +=
-    '<div class="episodes '+ '"><p class="ep-id">'+ 
-    (episode + ": " + rickAndMortyList[i].episode[i] + "<br>"); +
-    '</p></div>';
+    '<div class="episodes '+ '"><a class="ep-id" href>'+ 
+    (rickAndMortyList[i].name + ": " + rickAndMortyList[i].image + ': '+ rickAndMortyList[i].episode[i]); +
+    '</a></div>';
   }
 }
 
-// Should have used code above for character list... too late!
+// Should have used code above for character list as it seems simpler
+// ... too late!
 
 
 

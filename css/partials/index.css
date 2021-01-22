@@ -53,6 +53,11 @@ h1 {
   color: #6c6c6c;
 }
 
+.additional-info .box {
+  color: #ffffff;
+  border: 1px solid #6c6c6c6c;
+}
+
 .img-h2 {
   font-family: 'Helvetica';
   font-weight: 600;
