@@ -24,12 +24,13 @@
   </header>
   <main>
     <h1 class="character-h1">Explore The Characters found in Rick & Morty</h1>
+    <h3>Click the buttons below to check their alive status</h3>
     <!-- https://www.w3schools.com/howto/howto_js_filter_elements.asp -->
     <div class="filter-buttons">
-      <button class="btn active" onclick="filterSelection('all')"><span><i class="fas fa-globe"></i></span>All</button>
-      <button class="btn" onclick="filterSelection('alive')"><span><i class="far fa-smile-beam"></i></span> Alive</button>
-      <button class="btn" onclick="filterSelection('dead')"><span><i class="far fa-dizzy"></i></span> Dead</button>
-      <button class="btn" onclick="filterSelection('unknown')"><span><i class="far fa-question-circle"></i> </span>Unknown</button>
+      <button class="btn active" onclick="filterSelection('all')"><span><i class="fas fa-globe"></i></span><p>All</p></button>
+      <button class="btn" onclick="filterSelection('alive')"><span><i class="far fa-smile-beam"></i></span><p>Alive</p></button>
+      <button class="btn" onclick="filterSelection('dead')"><span><i class="far fa-dizzy"></i></span><p>Dead</p></button>
+      <button class="btn" onclick="filterSelection('unknown')"><span><i class="far fa-question-circle"></i></span><p>Unknown</p></button>
     </div>
     <div class="sorted">
       <section class="status-all filter"></section>
