@@ -7,15 +7,14 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
   integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-  <title>Rick and Morty Hackathon</title>
+  <title>Rick and Morty Hackathon - Character List</title>
 </head>
-<body>
+<body class="characters">
   <div class="nav">
     <img src="/img/netflix-logo.png" alt="Netflix logo">
-    <!-- Logo from: https://www.stickpng.com/img/icons-logos-emojis/tech-companies/netflix-logo -->
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="html/characters.html">Characters</a></li>
+      <li><a href="/index.html">Characters</a></li>
+      <li><a href="/html/information.html">Inofrmation</a></li>
       <li><a href="/html/episodes.html">Episodes</a></li>
     </ul>
   </div>
@@ -24,41 +23,20 @@
     <!-- https://www.stickpng.com/cat/cartoons/rick-and-morty?page=1 -->
   </header>
   <main>
-    <h1>About Rick & Morty</h1>
-    <div class="about-info">
-      <img src="/img/rick-morty-standing.png" alt="Rick and morty standing whilst looking unmoved">
-      <p>After having been missing for nearly 20 years, 
-        Rick Sanchez suddenly arrives at daughter Beth's 
-        doorstep to move in with her and her family. Although 
-        Beth welcomes Rick into her home, her husband, Jerry, 
-        isn't as happy about the family reunion. Jerry is 
-        concerned about Rick, a sociopathic scientist, 
-        using the garage as his personal laboratory. 
-        In the lab, Rick works on a number of sci-fi gadgets, 
-        some of which could be considered dangerous. 
-        But that's not all Rick does that concerns Jerry. 
-        He also goes on adventures across the universe 
-        that often involve his grandchildren, Morty and 
-        Summer.
-        <!-- Info taken from 'About Rick and Morty' Google Search: https://www.google.com/search?q=about+rick+and+morty&rlz=1C1CHBD_enNO892NO892&oq=about+rick+and+&aqs=chrome.0.0i457j69i57j0i22i30l2j0i22i30i395l6.2112j1j7&sourceid=chrome&ie=UTF-8 -->
-      </p>
+    <h1 class="character-h1">Explore The Characters found in Rick & Morty</h1>
+    <h3>Click the buttons below to check their alive status</h3>
+    <!-- https://www.w3schools.com/howto/howto_js_filter_elements.asp -->
+    <div class="filter-buttons">
+      <button class="btn active" onclick="filterSelection('all')"><span><i class="fas fa-globe"></i></span><p>All</p></button>
+      <button class="btn" onclick="filterSelection('alive')"><span><i class="far fa-smile-beam"></i></span><p>Alive</p></button>
+      <button class="btn" onclick="filterSelection('dead')"><span><i class="far fa-dizzy"></i></span><p>Dead</p></button>
+      <button class="btn" onclick="filterSelection('unknown')"><span><i class="far fa-question-circle"></i></span><p>Unknown</p></button>
     </div>
-    <div class="additional-info">
-      <p><span>Creators: </span>Dan Hammon, Justin Roiland</p>
-      <p><span>Cast: </span>Justin Roiland, Chris Pamell, Spencer Grammer, Sarah Chalke</p>
-      <p><span>Genres: </span>Sci-Fi TV, Sitcoms, Comedy Programs, Action & Adventure Programs</p>
-      <p><span>Maturity Raring: </span><span class="box">16+</span></p>
-      <!-- Info taken from Netflix.com -->
-    </div>
-    <h2 class="img-h2">Image Gallery</h2>
-    <div class="img-gallery">
-      <img src="/img/rick-morty-fun.png" alt="Rick standing and ruffling Morty's hair." class="img1">
-      <img src="/img/rock-why.png" alt="Rick standing with his arms out looking confused." class="img2">
-      <img src="/img/morty-angry.png" alt="Morty standing looking angry at someone, with sweat dripping down his face." class="img3">
-      <img src="/img/rick-drunk.png" alt="Morty swiming whilst holding a bottle of alcohol, looking drunk." class="img4">
-      <img src="/img/rick-morty-frustrated.png" alt="Rick and Morty tryying to connect cables, looking frustrated." class="img5">
-      <img src="/img/rick-morty-eye.png" alt="Rick and morty Logo" class="img6">
-    <!-- Images taken from: https://www.stickpng.com/img/download/58f37720a4fa116215a9240f -->
+    <div class="sorted">
+      <section class="status-all filter"></section>
+      <section class="status-alive filter"></section>
+      <section class="status-dead filter"></section>
+      <section class="status-unknown filter"></section>
     </div>
   </main>
   <footer>
@@ -76,5 +54,6 @@
       </ul>
     </div>
   </footer>
+  <script src="/js/characters.js"></script>
 </body>
 </html>
