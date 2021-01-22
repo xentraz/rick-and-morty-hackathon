@@ -1,0 +1,13 @@
+.episodes {
+  height: 50px;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ep-id {
+  color: white;
+  font-family: 'helvetica';
+}

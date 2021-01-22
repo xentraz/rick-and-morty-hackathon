@@ -58,7 +58,6 @@ body {
   padding: 26px;
   color: #ffffff;
   font-size: 0.9rem;
-  font-weight: 400;
   text-decoration: none;
   letter-spacing: 1px;
   font-family: 'Helvetica';
@@ -78,4 +77,77 @@ main {
     'search'
     'buttons'
     'main';
+  margin-bottom: 2vh;
+}
+
+footer {
+  grid-area: 'footer';
+  height: 10vh;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  border-top: #808080 1px solid;
+}
+
+.footer-container .social-media {
+  grid-row: 1/1;
+  grid-column: 2/2;
+
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-media p {
+  padding: 26px;
+  color: #808080;
+  cursor: pointer;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-left: 25px;
+  padding: 0;
+}
+
+.footer-container .terms {
+  grid-row: 1/1;
+  grid-column: 1/1;
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container ul li {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-container ul li a {
+  padding: 5px;
+  color: #808080;
+  font-size: 0.9rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: 'Helvetica';
+  font-weight: 300;
+}
+
+.footer-container ul li a:hover {
+  text-decoration: underline;
 }

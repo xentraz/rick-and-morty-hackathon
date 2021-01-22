@@ -743,6 +743,17 @@ var rickAndMortyList = [
 	},
 ];
 
-for (var i = 0; i < rickAndMortyList.length; i++) {
+var i, episode;
 
+for (i = 0; i < rickAndMortyList.length; i++) {
+  for (item in rickAndMortyList[i]) {
+    document.querySelector('main').innerHTML +=
+    '<div class="episodes '+ '"><p class="ep-id">'+ 
+    (episode + ": " + rickAndMortyList[i].episode[i] + "<br>"); +
+    '</p></div>';
+  }
 }
+
+// Should have used code above for character list... too late!
+// And.... I give up
+
