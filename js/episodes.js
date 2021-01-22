@@ -755,5 +755,6 @@ for (i = 0; i < rickAndMortyList.length; i++) {
 }
 
 // Should have used code above for character list... too late!
-// And.... I give up
+
+
 
